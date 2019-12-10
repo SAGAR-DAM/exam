@@ -11,6 +11,9 @@ Part 1:
   
   in GSL "gsl_root_fsolver" is used for non derivative method to find roots and "gsl_root_fdfsolver" for derivative method. Here 
   the bisection is a non derivative method and we have used  "gsl_root_fsolver".
+  
+  (In my BSc, I made a C code for bisection operation and I have also sent the code. I have never used GSL but used this code to 
+  find roots using bisection)
   reference: https://www.gnu.org/software/gsl/doc/html/roots.html
   
 
