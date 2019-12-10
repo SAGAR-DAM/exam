@@ -1,0 +1,24 @@
+** PROBLEM 2::
+part 1:
+THE C DATA TYPES FOR NUMERICAL OPERATION AND THEIR VALUE RANGE ARE GIVEN BY:
+
+  int / 2 	–32,767 to 32,767
+  float / 4 	1E–37 to 1E+37 with six digits of precision
+  double / 8 	1E–37 to 1E+37 with ten digits of precision
+  long double / 10 	1E–37 to 1E+37 with ten digits of precision
+  long int / 4 	–2,147,483,647 to 2,147,483,647
+  short int / 2 	–32,767 to 32,767
+  unsigned short int / 2 	0 to 65,535
+  signed short int / 2 	–32,767 to 32,767
+  long long int / 8 	–(2power(63) –1) to 2(power)63 –1
+  signed long int / 4 	–2,147,483,647 to 2,147,483,647
+  unsigned long int / 4 	0 to 4,294,967,295
+  unsigned long long int / 8 	2(power)64 –1
+  
+ $$ Here the given no: 2147483648 is an integer and hence we can store it using (unsigned long int) or (long long int) or
+    (unsigned long long int). Among them (unsigned long int) takes the least space and is sufficient to store the data. So the most 
+    preferred data type should be: unsigned long int.
+    
+ part 2:
+  python can store this value in it's integer data type. So to store this no in python we need only (int). Even if we don't specify 
+  the data type, it will itself take int as the default data type to store the given no.
