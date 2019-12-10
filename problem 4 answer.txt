@@ -1,0 +1,24 @@
+** PROBLEM 4
+Part 1:
+  In C we use 
+  'gsl_root_fsolver * gsl_root_fsolver_alloc(const gsl_root_fsolver_type * T)'
+  
+  This function returns a pointer to a newly allocated instance of a solver of type T. 
+  For example, the following code creates an instance of a bisection solver:
+  
+  "const gsl_root_fsolver_type * T = gsl_root_fsolver_bisection;
+  gsl_root_fsolver * s = gsl_root_fsolver_alloc (T);"
+  
+  in GSL "gsl_root_fsolver" is used for non derivative method to find roots and "gsl_root_fdfsolver" for derivative method. Here 
+  the bisection is a non derivative method and we have used  "gsl_root_fsolver".
+  reference: https://www.gnu.org/software/gsl/doc/html/roots.html
+  
+
+Part 2:
+  In scipy we import scipy.optimize to call the function 
+  "bisect(f,a,b)"
+  for bisection operation to find the the root of the equation f(x)=0.0. Here a and b are the initial two seed values. The function 
+  is designed in such a way that it will only start iteration iff f(a) and f(b) are of different sign. So if there is 
+  more than one roots present between a and b, we have to be careful that f(a)*f(b)=-ve. 
+  
+  In problem 5 I've used bisection to find the root for d.
