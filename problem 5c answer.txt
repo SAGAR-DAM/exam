@@ -1,0 +1,4 @@
+The value of theta corresponding to d=370.4 is: 0.48890034625302403
+here bisection algo is used to find the root.
+
+(the code has been sent separately)
