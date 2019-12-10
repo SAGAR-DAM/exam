@@ -24,4 +24,4 @@ Part 2:
   is designed in such a way that it will only start iteration iff f(a) and f(b) are of different sign. So if there is 
   more than one roots present between a and b, we have to be careful that f(a)*f(b)=-ve. 
   
-  In problem 5 I've used bisection to find the root for d.
+  In problem 5 I've used bisection to find the root for theta.
