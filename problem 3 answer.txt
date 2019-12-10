@@ -1,0 +1,30 @@
+**PROBLEM 3::
+Part 1:
+  In C we use the GSL function:
+  
+  int gsl_integration_romberg(const gsl_function * f, const double a, const double b, const double epsabs, 
+  const double epsrel, double * result, size_t * neval, gsl_integration_romberg_workspace * w)
+  
+  for romberg integration. This function integrates f(x), specified by f, from a to b, storing the answer in result.
+  (reference: https://www.gnu.org/software/gsl/doc/html/integration.html)
+
+Part 2:
+  In scipy we import scipy.integrate to call the function romberg(f,a,b) for Romberg integration. Here the function romberg() has 
+  generally three inputs:
+  1. f(x), i.e the function that we need to integrate
+  2. a, the lower limit of x
+  3. b, the upper limit of x
+  
+  but it has more optional arguments as:
+  argstuple, (optional): Extra arguments to pass to function. Each element of args will be passed as a single argument to func. 
+  Default is to pass no extra arguments.
+  
+  tol, rtolfloat, (optional): The desired absolute and relative tolerances. Defaults are 1.48e-8.
+  
+  showbool, (optional):  Whether to print the results. Default is False.
+
+  divmaxint, (optional):  Maximum order of extrapolation. Default is 10.
+
+  vec_funcbool, (optional):  Whether func handles arrays as arguments (i.e whether it is a “vector” function). Default is False
+  
+  ## In problems 1 and 6, I have used romberg() to integrate the function.
